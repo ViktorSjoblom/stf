@@ -8,14 +8,19 @@
 
 .app-wrapper {
   display: flex;
-  justify-content: center;
-  background-color: var(--weak-red);
-  padding: 3rem 0 3rem 0;
+  background-color: var(--milkwhite);
+  padding: 3rem 0 3rem 10rem;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}
+
+.text-app {
+  width: 60%;
 }
 
 .app-background {
   height: 555px;
-  background-image: url(app-background.png);
+  background-image: url(images/app-background.png);
 }
 
 .app-fat-text {
@@ -207,8 +212,8 @@
   align-items: center;
   display: none;
   position: absolute;
-  left: 38.4rem;
-  top: 275rem;
+  left: 17.3rem;
+  top: 117.5rem;
 }
 
 .hidden {
@@ -234,4 +239,15 @@
 .dropdown-text-expanded:hover {
   cursor: pointer;
   transform: scale(1.2);
+}
+
+@media screen and (max-width: 414px) {
+  .app-wrapper {
+    padding: 0;
+    flex-direction: column-reverse;
+  }
+
+  .text-app {
+    width: 100%;
+  }
 }
