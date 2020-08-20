@@ -15,7 +15,7 @@
 }
 
 .text-app {
-  width: 60%;
+  width: 70%;
 }
 
 .app-background {
@@ -245,6 +245,7 @@
   .app-wrapper {
     padding: 0;
     flex-direction: column-reverse;
+    overflow: hidden;
   }
 
   .text-app {
