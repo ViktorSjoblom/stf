@@ -102,6 +102,16 @@
   display: flex;
 }
 
+@media screen and (max-width: 414px) {
+  .paper-mockup {
+    height: auto;
+  }
+
+  .spons-img {
+    width: 70%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .video {
     width: 90%;
