@@ -76,3 +76,34 @@
   padding-top: 1.5rem;
   width: 50%;
 }
+
+.spons-div {
+  display: flex;
+  justify-content: center;
+}
+
+.spons-img {
+  width: 40%;
+}
+
+.paper-mockup {
+  height: 807.75px;
+}
+
+.paper-mockup img {
+  width: 100%;
+}
+
+.instagram-picture img {
+  width: 100%;
+}
+
+.instagram-picture {
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .video {
+    width: 90%;
+  }
+}

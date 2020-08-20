@@ -6,6 +6,13 @@
   flex-direction: column;
 }
 
+.app-wrapper {
+  display: flex;
+  justify-content: center;
+  background-color: var(--milkwhite);
+  padding: 3rem 0 3rem 0;
+}
+
 .app-background {
   height: 555px;
   background-image: url(app-background.png);
@@ -58,13 +65,21 @@
   height: 42px;
 }
 
+.distance-input::placeholder {
+  text-align: right;
+  color: var(--red);
+  padding-right: 1rem;
+  font-size: 18px;
+  line-height: 23px;
+}
+
 .app-dropdown-area {
   display: flex;
   padding: 2rem 0 0 1rem;
 }
 
 .how-text {
-  padding: 0 2.8rem 0 0;
+  padding: 0.5rem 0.6rem 0 0;
 }
 
 .app-dropdown {
@@ -93,9 +108,22 @@
   padding: 0.3rem 0 0 1rem;
 }
 
+.app-dropdown img:hover {
+  cursor: pointer;
+}
+
 .app-upload {
   display: flex;
-  padding: 0 0 4rem 0;
+  padding: 3rem 0 4rem 3rem;
+}
+
+.app-upload p {
+  color: var(--red);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  padding-right: 0.3rem;
 }
 
 .app-register {
@@ -108,11 +136,27 @@
   align-items: center;
 }
 
+.register-flex {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 6rem;
+}
+
 .app-register p {
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 23px;
+}
+
+.app-register p:hover {
+  cursor: pointer;
+}
+
+.position-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 0 7rem 0 0;
 }
 
 .app-footer {
@@ -153,7 +197,7 @@
 
 .dropdown-menu {
   width: 247px;
-  height: 199px;
+  height: 155px;
   background: #ffffff;
   box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
@@ -162,6 +206,9 @@
   padding: 1rem 0 1rem 0;
   align-items: center;
   display: none;
+  position: absolute;
+  left: 38.4rem;
+  top: 275rem;
 }
 
 .hidden {
@@ -178,4 +225,13 @@
   font-size: 18px;
   line-height: 23px;
   color: var(--red);
+}
+
+.dropdown-text-expanded {
+  transition: 0.2s ease-in-out;
+}
+
+.dropdown-text-expanded:hover {
+  cursor: pointer;
+  transform: scale(1.2);
 }
