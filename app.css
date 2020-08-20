@@ -9,7 +9,7 @@
 .app-wrapper {
   display: flex;
   justify-content: center;
-  background-color: var(--milkwhite);
+  background-color: var(--weak-red);
   padding: 3rem 0 3rem 0;
 }
 
