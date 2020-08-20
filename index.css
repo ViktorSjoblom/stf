@@ -1,9 +1,8 @@
 * {
-  background-color: var(--red);
   padding: 0;
   margin: 0;
   font-family: "Source Sans Pro", sans-serif;
-  font-family: "EB Garamond", serif;
+  /* font-family: "EB Garamond", serif; */
 }
 
 :root {
@@ -26,14 +25,28 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 2rem;
 }
 
-.play-button {
+.play-button,
+.pause-button {
   border: none;
+  transition: 0.3s ease-in-out;
+  outline: none;
+  background-color: white;
+}
+
+.play-button:hover,
+.pause-button:hover {
+  transform: scale(1.2);
+}
+
+.play-button:active,
+.pause-button:active {
+  transform: scale(0.8);
 }
 
 .pause-button {
-  border: none;
   width: 32px;
 }
 
@@ -42,7 +55,7 @@
 }
 
 .video {
-  width: 50%;
+  width: 60%;
 }
 
 .buttons {
@@ -50,4 +63,16 @@
   padding: 1rem 0 1rem 0;
   display: flex;
   justify-content: space-between;
+}
+
+.main-header {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-header img {
+  padding-top: 1.5rem;
+  width: 50%;
 }
