@@ -21,3 +21,33 @@
   --gray: #b2b2b2;
   --milkwhite: #ededed;
 }
+
+.wrapper-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.play-button {
+  border: none;
+}
+
+.pause-button {
+  border: none;
+  width: 32px;
+}
+
+.play-img {
+  width: 2rem;
+}
+
+.video {
+  width: 50%;
+}
+
+.buttons {
+  width: 80px;
+  padding: 1rem 0 1rem 0;
+  display: flex;
+  justify-content: space-between;
+}
